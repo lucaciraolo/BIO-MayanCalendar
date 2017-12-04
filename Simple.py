@@ -23,16 +23,18 @@ days_in_month = {
         6: 30,
         7: 31,
         8: 31,
-        9: 9,
+        9: 30,
         10: 31,
         11: 30,
         12: 31
     }
 
-while not (target_baktuns != baktuns and target_katuns != katuns and target_tuns != tuns and target_uinals != uinals and target_kins != katuns):
-
+while target_baktuns != baktuns or target_katuns != katuns or target_tuns != tuns or target_uinals != uinals or target_kins != kins:
+    # print(baktuns, katuns, tuns, uinals, kins)
+    # print(day, month, year)
     kins += 1
     day += 1
+
 
     if kins > 20:
         uinals += 1
